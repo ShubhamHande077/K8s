@@ -3,9 +3,9 @@ kind: ReplicationController
 metadata:
   name: myapp
 spec:
-replicas: 3
-selector:
-  app: myworkapp
+  replicas: 3
+  selector:
+    app: myworkapp
   template:
     metadata:
       name: spider2
@@ -18,4 +18,3 @@ selector:
           image: nginx
           ports: 
             - containerPort: 80
-...
