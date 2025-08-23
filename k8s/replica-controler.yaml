@@ -7,16 +7,15 @@ replicas: 3
 selector:
   app: myworkapp
   template:
-  metadata:
-  name: spider2
-  namespace: mywork
-  labels:
-   env: dev
-   app: myworkapp
-spec:
-  containers:
-    - name: spider2
-      image: nginx
-      ports: 
-       - containerPort: 80
-
+    metadata:
+      name: spider2
+      labels:
+        env: dev
+    app: myworkapp
+    spec:
+      containers:
+        - name: spider2
+          image: nginx
+          ports: 
+            - containerPort: 80
+...

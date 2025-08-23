@@ -6,11 +6,11 @@ metadata:
   namespace: mywork
   labels:
    env: dev
-   app: myworkapp
-spec:
-  containers:
-    - name: spider2
-      image: nginx
-      ports: 
-       - containerPort: 80
+  app: myworkapp
+  spec:
+    containers:
+      - name: spider2
+        image: nginx
+        ports: 
+          - containerPort: 80
 ...
