@@ -1,0 +1,14 @@
+---
+apiversion: v1
+kind: Pod
+metadata:
+  name: spider2
+  labels:
+   env: dev
+spec:
+  containers:
+    - name: spider2
+      image: nginx
+      ports: 
+       - containerPort: 80
+...

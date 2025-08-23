@@ -1,0 +1,13 @@
+---
+apiversion: v1
+kind: Service
+metadata:
+  name: spider2
+spec:
+  type: NodePort
+  selector:
+    app: spider2
+  ports:
+  - port: 80
+    targetPort: 80
+...
