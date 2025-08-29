@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+     app: myworkapp3
+    matchExpressions:
+      - { key: app, operator: In, values: [myworkapp3] }
+  template:
+    metadata:
+      name: spider4
+      labels:
+        env: dev
+        app: myworkapp3
+    spec:
+      containers:
+        - name: spider4
+          image: nginx
+          ports: 
+            - containerPort: 80
