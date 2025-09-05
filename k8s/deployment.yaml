@@ -17,7 +17,7 @@ spec:
         app: myworkapp3
     spec:
       containers:
-        - name: spider4
-          image: nginx
-          ports: 
-            - containerPort: 80
+      - name: spider4
+        image: nginx
+        ports: 
+        - containerPort: 80
