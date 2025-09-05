@@ -16,5 +16,5 @@ spec:
         - name: batch-container
           image: busybox:latest
           commnad: ["sh", "-c", "echo Hello friends! && sleep 10"]
-        restartPolicy: Never
+      restartPolicy: Never
  
